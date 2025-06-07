@@ -1,0 +1,28 @@
+.some-text {
+    font-family: "Open Sans", "Arial", serif;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.text-two {
+    font-family: "Open Sans", "Arial", serif;
+    text-decoration: line-through;
+}
+
+.text-three {
+    text-align: center;
+}
+
+.text-four {
+    color: blueviolet;
+    word-spacing: 30px;
+    text-decoration: overline;
+    text-decoration-style: wavy;
+}
+
+.text-five {
+    letter-spacing: 5px;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+    text-decoration-thickness: 3px;
+}
