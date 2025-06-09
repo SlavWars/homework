@@ -1,0 +1,29 @@
+.background {
+    background: #debcf1;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    height: 400px;
+    overflow: auto;
+    border: 1px solid black;
+}
+
+.width-blocks {
+    max-width: 900px;
+}
+.block {
+    display: inline-block;
+    padding: 9px 0px 2px 3px;
+}
+
+.block-cart {
+    border: 1px solid black;
+    background: #c1a153;
+    width: 150px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: inset 0 0 10px rgb(35, 34, 34)
+}
+
+.title {}
+
+.lorem {}
