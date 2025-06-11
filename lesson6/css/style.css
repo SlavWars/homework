@@ -48,7 +48,7 @@ body {
 }
 
 .hero {
-    background: url(/img/hero-bg.jpeg) 40% 70% / cover no-repeat;
+    background: url(../img/hero-bg.jpeg) 40% 70% / cover no-repeat;
     height: 600px;
     padding: 120px 0;
 }
