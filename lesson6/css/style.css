@@ -1,0 +1,217 @@
+body {
+    background: #181E34;
+    line-height: 150%;
+    color: #fff;
+    font-family: "Montserrat", "arial", sans-serif;
+}
+
+.container {
+    max-width: 930px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0 15px;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------- */
+.header {
+    padding: 30px 0 36px;
+}
+
+.header-nav,
+.header-inner {
+    display: flex;
+    align-items: center;
+}
+
+.link-logo {
+    margin-right: auto;
+}
+
+.logo {}
+
+
+.header-list {
+    display: flex;
+}
+
+.header-item {
+    margin-right: 30px;
+
+}
+
+.header-btn {
+    padding: 18px 30px;
+    background: #fff;
+    color: rgb(39, 102, 174);
+    font-weight: 500;
+    border-radius: 100px;
+}
+
+.hero {
+    background: url(/img/hero-bg.jpeg) 40% 70% / cover no-repeat;
+    height: 600px;
+    padding: 120px 0;
+}
+
+.hero-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 49px;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+
+.hero-block {
+    display: flex;
+    align-items: center;
+}
+
+.hero-text {
+    max-width: 436px;
+    margin-right: auto;
+}
+
+.paragraf {
+    margin-bottom: 15px;
+}
+
+.paragraf span {
+    color: rgb(1, 162, 203);
+    font-weight: 700;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    width: 100%;
+}
+
+.hero-button-two,
+.hero-button-one {
+    padding: 18px 30px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-button-one {
+    background: linear-gradient(180.00deg, rgb(0, 164, 204), rgb(39, 102, 174) 100%);
+    margin-bottom: 10px;
+}
+
+.hero-button-two {
+    background: linear-gradient(129.14deg, rgb(0, 164, 204) 5.913%, rgb(39, 102, 174) 91.534%);
+}
+
+.hero-button-two img {
+    margin-left: 4px;
+}
+
+.cards {
+    padding: 120px 0;
+}
+
+.cards-title {
+    margin-bottom: 15px;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 49px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.cards-text {
+    max-width: 513px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+.cards-flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -28px;
+}
+
+.cards-item {
+    flex: 1 1 25%;
+    margin-bottom: 28px;
+    padding: 0 9px;
+}
+
+.cards-wrapper {
+    padding: 28px;
+    border: 2px solid rgb(23, 107, 174);
+    border-radius: 16px;
+    box-shadow: 4px 4px 13px 0px rgba(5, 13, 41, 0.76);
+    background: rgb(25, 124, 184);
+}
+
+.cards-flex-title {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 27px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.cards-flex-text {
+    max-width: 144px;
+    text-align: center;
+}
+
+.hero-button {
+    margin: 30px auto 0;
+    display: flex;
+    padding: 18px 30px;
+    justify-content: center;
+    border-radius: 100px;
+    background: linear-gradient(180.00deg, rgb(0, 164, 204), rgb(39, 102, 174) 100%);
+    max-width: 436px;
+    width: 100%;
+}
+
+.footer {
+    border-top: 1px solid rgb(50, 57, 82);
+    padding: 60px 0;
+}
+
+.footer-block {
+    display: flex;
+}
+
+.footer-block-information {
+    margin-right: auto;
+}
+
+.logo {
+    margin-bottom: 15px;
+}
+
+.paragraf-footer {
+    max-width: 267px;
+}
+
+.footer-col {
+    width: 100%;
+    max-width: 220px;
+    margin-right: 15px;
+}
+
+.footer-col-title {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 27px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.footer-col-list {}
+
+.footer-col-item {
+    margin-bottom: 10px;
+}
+
+.footer-col-link {}
