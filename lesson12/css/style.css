@@ -238,7 +238,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: var(--accent-text)B3;
+    background: #1D6FB6B3;
     height: 53px;
     display: flex;
     justify-content: center;
