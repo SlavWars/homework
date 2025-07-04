@@ -1,62 +1,28 @@
-const user = {
-    Slava: {
-        Name: 'Slava',
-        Age: 200,
-        Height: 200,
-        Weight: 200,
-        SayHello(name) {
-            console.log(`Hello ${name}`)
-        } 
-    }
+const btn = document.querySelector('.btn-open')
+const modal = document.querySelector('.modal')
+const body = document.body
+
+const openModal = () => {
+    modal.classList.add('modal--open')
+    body.classList.add('body--fixed')
 }
 
-user.Slava.SayHello('Slava')
+const closeModal = () => {
+    modal.classList.remove('modal--open')
+    body.classList.remove('body--fixed')
+}
 
+btn.addEventListener('click', openModal)
 
-const users = [
-    {
-        Name: 'Slava',
-        Age: 200,
-        Height: 200,
-        Weight: 200,
-        IsAdmin: true,
-    },
-    {
-        Name: 'Tom',
-        Age: 200,
-        Height: 200,
-        Weight: 200,
-        IsAdmin: false,
-    },
-    {
-        Name: 'John',
-        Age: 200,
-        Height: 200,
-        Weight: 200,
-        IsAdmin: false,
-    },
-    {
-        Name: 'Tim',
-        Age: 200,
-        Height: 200,
-        Weight: 200,
-        IsAdmin: false,
-    },
-]
-
-users.push({
-    Name: 'ivan',
-    Age: 200,
-    Height: 200,
-    Weight: 200,
-    IsAdmin: false,
+modal.addEventListener('click', event => {
+    const target = event.target
+    if(target && target.classList.contains('modal--open') || target.classList.contains('modal__close-btn')) {
+        closeModal()
+    }
 })
-let simpleUser = 0;
 
-for(let i = 0; i < users.length; i++) {
-    if(users[i].IsAdmin !== true) {
-        simpleUser++;
+document.addEventListener('keydown', event => {
+    if(event.code === 'Escape' && modal.classList.contains('modal--open')) {
+        modal.classList.remove('modal--open')
     }
-}
-
-console.log(`Количество простых пользователей: ${simpleUser}`)
+})
