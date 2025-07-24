@@ -137,8 +137,9 @@
 
     new Swiper('.testimonials__slider', {
         
-        spaceBetween: 66,
-        slidesPerView: 2,
+        spaceBetween: 0,
+        slidesPerView: 1,
+        centeredSlides: true,
 
         navigation: {
             nextEl: '.testimonials__next',
@@ -149,5 +150,13 @@
             el: '.swiper-scrollbar',
             draggable: true,
         },
+        breakpoints: {
+            901: {
+                spaceBetween: 1.5,
+            },
+            1201: {
+                slidesPerView: 2.1,
+            }
+        }
     });
 })();
