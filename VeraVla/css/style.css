@@ -146,7 +146,7 @@
 /* ======================================================================================= */
 
 .AI {
-    background: url("../img/background/fon1.png");
+    background: url("../img/background/AI-background.png");
     background-repeat: no-repeat;
     background-position: 30% 10%;
 }
@@ -1052,7 +1052,7 @@
 }
 @media(max-width: 400px) {
     .header {
-        background: url("../img/background/group3.png") 65% -650%;
+        background: url("../img/background/mainBG-mobail.png") 65% -650%;
     }
     .consultation__img,
     .consultation__message {
@@ -1062,11 +1062,15 @@
         padding: 10px 25px 20px;
     }
     .AI__inner {
-        background: url("../img/background/Group234.png") 100% 84% no-repeat;
+        background: url("../img/background/AI-mob.png") 100% 88% no-repeat;
         opacity: 0.9;
     }
+    .author__inner {
+        padding-top: 55px;
+        padding-bottom: 375px;
+    }
     .our-course {
-        background: url("../img/background/group.png") 100% -20%;
+        background: url("../img/background/brain-mob.png") 100% -32%;
     }
     .author {
         background: url("../img/background/author-mob.png") 54% -98%;
@@ -1125,12 +1129,12 @@
 
 @media(max-width: 320px) {
     .header {
-        background: url(../img/background/group3.png) 65% -1091%;
+        background: url("../img/background/mainBG-mobail.png") 65% -1091%;
     }
         .AI__inner {
-        background: url(../img/background/Group234.png) 100% 89% no-repeat;
+        background: url("../img/background/AI-mob.png") 100% 89% no-repeat;
     }
     .our-course {
-        background: url("../img/background/group.png") 100% -275%;
+        background: url("../img/background/brain-mob.png") 100% -275%;
     }
 }

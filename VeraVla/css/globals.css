@@ -24,6 +24,7 @@ body {
 }
 
 .line {
+    display: flex;
     height: 1px;
     background: linear-gradient(313deg, #022335 0%, #043a41 100%);
     filter: blur(2px);
