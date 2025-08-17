@@ -7,6 +7,7 @@
     --background-color: rgba(2, 35, 53, 0.8) rgba(12, 55, 61, 0.8);
     --background-color-2: rgb(2, 35, 53) rgb(4, 58, 65);
     --border-radius: 9px;
+    --border-radius-big: 20px;
     --transition: all .4s;
 }
 html {
@@ -21,17 +22,46 @@ body {
     line-height: 1.5;
     color: var(--white-color);
 }
+
 .line {
-    border-bottom: 2px;
-    box-shadow: 0px 0px 24px 0px rgb(0, 224, 255),0px 4px 15px 0px rgb(74, 217, 236),0px 3px 15px 0px rgba(0, 224, 255, 0.93);
+    height: 1px;
+    background: linear-gradient(313deg, #022335 0%, #043a41 100%);
     filter: blur(2px);
-    width: 100%;
+    box-shadow: 0 0 24px 0 #00e0ff, 0 4px 15px 0 #4ad9ec, 0 3px 15px 0 rgba(0, 224, 255, 0.93);
+    
 }
 .modal--opened {
     overflow: hidden;
 }
 .body--opened-modal {
     overflow: hidden;
+}
+.modal__button-close {
+    right: -15px;
+    top: -15px;
+    position: absolute;
+    z-index: 11;
+}
+.modal__button-close span {
+    display: block;
+    width: 30px;
+    height: 3px;
+}
+.modal__button-close span::before,
+.modal__button-close span::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background:rgb(0, 224, 255);
+}
+.modal__button-close span::before {
+    top: 0px;
+    transform: rotate(45deg);
+}
+.modal__button-close span::after {
+    bottom: 0px;
+    transform: rotate(-45deg);
 }
 .wrapper {
     min-height: 100%;
@@ -75,13 +105,13 @@ body {
     line-height: 1.6;
     padding: 3px 15px;
     height: 60px;
-    letter-spacing: 25%;
+    letter-spacing: 0.25em;
 
     transition: var(--transition);
 }
 
 .button:hover {
-    background: #FF9138;
+    scale: 1.05;
 }
 
 .modal {
@@ -150,16 +180,13 @@ body {
     font-weight: 450;
     margin-bottom: 10px;
 }
-.modal__form {
-}
+
 .modal__form-label {
     display: flex;
     flex-direction: column;
 
 }
-.field {
 
-}
 .field__input {
     border-radius: 9px;
     background: linear-gradient(180.00deg, rgba(0, 224, 255, 0.11),rgba(0, 224, 255, 0.05) 100%);
@@ -176,7 +203,12 @@ body {
 .field__input:last-child {
     margin-bottom: 30px;
 }
+.modal__wrapper-button {
+    display: flex;
+    justify-content: center;
+}
 .button {
+    text-align: center;
     border-radius: 9px;
     box-shadow: 0px 7px 20px -7px rgb(0, 224, 255);
     color: #ffffff;
@@ -187,90 +219,3 @@ body {
 }
 
 /* ============================= */
-/* .body--opened-modal .modal {
-    opacity: 1;
-    visibility: visible;
-}
-.body--opened-modal {
-    opacity: 1;
-    visibility: visible;
-} */
-/* .modal__window {
-    position: relative;
-    background-color: var(--general-bg);
-    border-radius: var(--border-radius);
-    padding: 0 60px 60px;
-    max-width: 428px;
-}
-.modal__cancel {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-}
-.modal__cancel path {
-    transition: var(--transition);
-}
-.modal__cancel:hover path, 
-.modal__cancel:hover rect {
-    stroke: var(--input-color);
-}
-.modal__img {
-    margin: -65px 0 15px 13px;
-    max-width: 100%;
-} */
-/* .modal__title {
-    font-family: 'Gabriola';
-    font-size: 42px;
-    line-height: .9;
-    margin-bottom: 10px;
-}
-.modal__text {
-    margin-bottom: 30px;
-}
-
-.modal__form-label {
-    margin-bottom: 10px;
-}
-.field {
-    position: relative;
-    display: block;
-}
-.field span {
-    position: absolute;
-    top: 12px;
-    left: 28px;
-    font-size: 11px;
-    color: var(--input-color);
-
-    opacity: 0;
-    visibility: hidden;
-    transition: var(--transition);
-}
-.field__input {
-    display: block;
-    width: 100%;
-    background: transparent;
-    border-radius: 100px;
-    padding: 19px 42px 19px 28px;
-    border: 1px solid var(--input-color);
-    font-size: 16px;
-    transition: var(--transition);
-}
-.field__input:hover {
-    border-color: var(--accent-color);
-}
-.field__input:hover::placeholder {
-    color: var(--accent-color);
-}
-.field__input::placeholder {
-    color: var(--input-color);
-    transition: var(--transition);
-
-}
-.field__input:focus {
-    padding: 26px 42px 12px 28px;
-}
-.field__input:focus + span {
-    opacity: 1;
-    visibility: visible;
-} */

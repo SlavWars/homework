@@ -35,7 +35,7 @@
 
         const target = e.target
 
-        if (target.closest('.modal__cancel') || target.classList.contains('modal')) {
+        if (target.closest('.modal__button-close') || target.classList.contains('modal')) {
             document.body.classList.remove('body--opened-modal')
         }
 
@@ -75,7 +75,7 @@
         })
     });
 
-    // Слайдер галерея
+    // Слайдер 
 
     new Swiper('.school__slider', {
         spaceBetween: 30,
@@ -97,37 +97,37 @@
             }
         }
     });
-
     document.querySelectorAll('.more').forEach(btn => {
         btn.addEventListener('click', e => {
             e.preventDefault();
+
             const container = btn.closest('.fade-container');
             container.classList.toggle('expanded');
+
             btn.textContent = container.classList.contains('expanded') ? 'Скрыть' : 'Подробнее';
         });
     });
-    // // Слайдер отзывов
 
-    // new Swiper('.school__vacanies-list', {
-        
-    //     spaceBetween: 0,
-    //     slidesPerView: 2,
-    //     centeredSlides: true,
+    new Swiper('.vacancies__slider', {
+        spaceBetween: 30,
+        slidesPerView: 1,
 
-    //     navigation: {
-    //         nextEl: '.school__vacanies-next',
-    //         prevEl: '.school__vacanies-prev',
-    //     },
-
-    //     breakpoints: {
-    //         901: {
-    //             spaceBetween: 1.5,
-    //         },
-    //         1201: {
-    //             slidesPerView: 2.1,
-    //         }
-    //     }
-    // });
+        navigation: {
+            nextEl: '.vacancies__next',
+            prevEl: '.vacancies__prev',
+        },
+        breakpoints: {
+            601: {
+                slidesPerView: 1,
+            },
+            801: {
+                spaceBetween: 32,
+            },
+            1101: {
+                slidesPerView: 2,
+            }
+        }
+    });
 
     const telInput = document.querySelectorAll('input[type="tel"]')
     const im = new Inputmask("+7 (999) 999-99-99")
