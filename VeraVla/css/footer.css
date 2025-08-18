@@ -9,6 +9,9 @@
     justify-content: space-between;
     margin-bottom: 30px;
 }
+.footer__logo {
+    margin-bottom: 45px;
+}
 .footer__contact {
     display: flex;
     flex-wrap: wrap;
@@ -106,4 +109,3 @@
     justify-content: end;
     padding-top: 18px;
 }
-

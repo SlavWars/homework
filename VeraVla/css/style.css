@@ -283,7 +283,13 @@
 .our-course__img {
     margin-right: 20px;
     z-index: 2;
+}
 
+.our-course__img-brain {
+    display: none;
+}
+.our-course__img-brain img {
+    width: 100%;
 }
 .our-course__text {
     z-index: 2;
@@ -909,11 +915,13 @@
         padding-right: 0;
         padding-bottom: 10px;
     }
+    .our-course__img-brain {
+        display: block;
+        max-width: 800px;
+        margin-bottom: 10px;
+    }
 }
 @media(max-width: 600px) {
-    .header {
-        background: url(../img/background/mobile-hero.png);
-    }
     .logo-img {
         display: none;
     }
@@ -1069,6 +1077,9 @@
         padding-top: 55px;
         padding-bottom: 375px;
     }
+    .our-course__img-brain {
+        display: none;
+    }
     .our-course {
         background: url("../img/background/brain-mob.png") 100% -32%;
     }
@@ -1126,7 +1137,26 @@
         justify-content: start;
     }
 }
-
+@media(max-width: 350px) {
+    .our-course {
+        background: url("../img/background/brain-mob.png") 100% -100%;
+    }
+}
+@media (max-width: 344px) {
+    .our-course {
+        background: url(../img/background/brain-mob.png) 100% -129%;
+    }
+}
+@media (max-width: 335px) {
+    .our-course {
+        background: url(../img/background/brain-mob.png) 100% -334%;
+    }
+}
+@media (max-width: 330px) {
+    .our-course {
+        background: url(../img/background/brain-mob.png) 100% -275%;
+    }
+}
 @media(max-width: 320px) {
     .header {
         background: url("../img/background/mainBG-mobail.png") 65% -1091%;
